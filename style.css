@@ -61,6 +61,18 @@ body {
     gap: 6px;
 }
 
+.sidebar-links li:hover {
+    transition: 500ms;
+    box-shadow: inset -248px 0px var(--color4) ;
+    
+}
+
+.sidebar-links li:hover > .sidebar-links-icon path {
+    transition: 1000ms;
+    fill: var(--color1);
+}
+
+
 .sidebar-links-icon {
     height: 24px;
 }
@@ -69,12 +81,17 @@ body {
     fill: var(--color4);
 }
 
-
 .sidebar-links a {
     font-size: 20px;
     text-decoration: none;
     color: var(--color4);
 }
+
+.sidebar-links li:hover > a {
+    transition: 1000ms;
+    color: var(--color1);
+}
+
 
 .header {
     background-color: var(--color2);
