@@ -142,7 +142,6 @@ body {
     
 }
 
-
 .header-profile svg path {
     fill: var(--color4);
 }
@@ -161,13 +160,20 @@ body {
     width: 100px;
     height: 40px;
     margin: 10px;
-    border: var(--color1);
+    border: 2px solid var(--color4);
     border-radius: 50px;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color4);
+}
+
+.header-botton button:hover {
+    transition: 250ms;
+    background-color: var(--color4);
+    border: 2px solid var(--color1);
+    color: var(--color1);
 }
 
 .main {
@@ -213,14 +219,14 @@ body {
 }
 
 .card-image {
-    width: 245px;
-    height: 175px;
+    width: 220px;
+    height: 155px;
     border: solid 2px var(--color4);
     border-radius: 10px;
 }
 
 .card p{
-    height: 145px;
+    height: 165px;
 }
 
 .card-links {
