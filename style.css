@@ -172,19 +172,19 @@ body {
 .header-botton button:hover {
     transition: 250ms;
     background-color: var(--color4);
-    border: 2px solid var(--color1);
+    border: 3px solid var(--color1);
     color: var(--color1);
 }
 
 .main {
     background-color: var(--color3);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2.6fr 1fr;
 }
 
 .projects {
     grid-column: 1 / 2;
-    margin: 20px;
+    margin: 20px 0 20px 20px;
 }
 
 .projects h2 {
@@ -246,6 +246,74 @@ body {
 }
 
 
-.announcements {
+.calendar {
     grid-column: 2/ 3;
+    margin: 12px;
+}
+
+.calendar ul {
+    list-style: none;
+}
+
+.month {
+    margin-top: 75px;
+    padding: 10px ;
+    background: var(--color2);
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: var(--color4);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 5px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 5px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 5px 0;
+    background-color: rgba(5, 6, 46, 0.925);
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: var(--color4);
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: var(--color1);
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: var(--color4);
+}
+
+.days li .active {
+    padding: 5px;
+    background: var(--color2);
 }
